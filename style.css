@@ -97,11 +97,134 @@
   border-left: 2px solid #0D6EFD;
 }
 
-
 /* options */
 .options button{
   border:none;
   outline: none;
   background-color: #fff;
   color:#8B96A5;
+}
+
+.left-menu button{  
+  border: none;  
+  background-color: #fff;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between; /* Push left-menu left and right-menu right */
+  align-items: center; /* Keep items vertically aligned */
+  padding: 7px 20px;
+  width: 100%;
+  position: relative;
+  margin:5px;
+}
+
+.left-menu, .right-menu {
+  display: flex; /* Ensure buttons stay in a row */
+  align-items: center;
+  gap: 15px; /* Add space between elements */
+}
+
+.menu::before {
+  top: -3px; /* Moves the top line above the menu */
+}
+
+.menu::after {
+  bottom: -3px; /* Moves the bottom line below the menu */
+}
+.menu::before,
+.menu::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+}
+.left-menu select,
+.right-menu select{
+  border: none;  
+  background-color: #fff;
+}
+
+#main-content {
+  display: flex;
+  border: 1px solid #8B96A5;
+  border-radius: 6px;
+  margin: 8% 10%;
+  overflow: hidden; /* Border-radius issue fix */
+}
+
+/* Category Buttons */
+#main-content .category-buttons button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #505050;
+  padding: 8px;
+}
+
+#main-content .category-buttons button:hover {
+  color: #1C1C1C;
+  background-color: #E5F1FF;
+}
+
+/* User Info Section */
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info div {
+  margin: 2%;
+}
+
+/* User Profile */
+.user-info .user-profile {  /* Corrected selector */
+  border-radius: 6px;
+  background: #E3F0FF;
+  padding: 10px;
+}
+
+/* Buttons Inside User Profile */
+.user-profile .btn1 {
+  background: linear-gradient(180deg, #127FFF 0%, #0067FF);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.user-profile .btn2 {
+  background-color: #fff;
+  color: #0D6EFD;
+  border: 1px solid #DEE2E7;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.user-info .discount{
+  border-radius: 6px;
+background: #F38332;
+color:#fff;
+}
+
+.user-info .quotes{
+  border-radius: 6px;
+background: #55BDC3;
+color:#fff;
+}
+
+.banner-image{
+  position:relative
+}
+.above-image{
+  position: absolute;
+  top:40px;
+  left:20px;
 }
