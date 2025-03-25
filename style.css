@@ -1,8 +1,15 @@
-*{
-  margin:0;
+html, body {
+  overflow-x: hidden; /* ✅ Prevents Horizontal Scroll */
+  width: 100%;
+}
+
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 .navbar {
   display: flex;
@@ -17,7 +24,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 150px; /* Background ki width set kar di */
+  max-width: 150px; /* Background ki width set kar di */
 
 }
 
@@ -60,7 +67,8 @@
 .input-container {
   display: flex;
   align-items: center;
-  width: 50vw; /* Responsive width */
+  width: 50%;
+  min-width: 300px; /* Responsive width */
   max-width: 666px; /* Ensures it doesn't exceed total width */
   height: 40px;
   border: 2px solid #0D6EFD;
@@ -119,6 +127,7 @@
   width: 100%;
   position: relative;
   margin:5px;
+  flex-wrap: wrap;
 }
 
 .left-menu, .right-menu {
@@ -150,30 +159,84 @@
   background-color: #fff;
 }
 
+/* 🏠 Main Content Container */
 #main-content {
+  max-width: 100%; /* ✅ Ensures it doesn’t exceed screen width */
+  overflow: hidden; /* ✅ Prevents content overflow */
   display: flex;
   border: 1px solid #8B96A5;
   border-radius: 6px;
+  padding: 4px 8px;
   margin: 8% 10%;
-  overflow: hidden; /* Border-radius issue fix */
+  max-width: 80%;
+  height: auto;
+  min-width: 320px;
+  align-items: stretch; /* Ensure all child elements have equal height */
 }
 
-/* Category Buttons */
-#main-content .category-buttons button {
-  border: none;
-  outline: none;
-  background-color: #fff;
+/* 📌 Sidebar */
+.sidebar {
+  width: 25%;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.2px;
   color: #505050;
-  padding: 8px;
+}
+.sidebar li:hover {
+  background-color: #eaeaea;
+}
+.sidebar li.active {
+  background-color: #d6e4ff;
+  color: #0044cc;
+  font-weight: bold;
 }
 
-#main-content .category-buttons button:hover {
+/* 🏷️ Banner (Fixed & Properly Aligned) */
+.banner {
+  max-width: 100%;
+  flex-grow: 2; /* Zyada space lega */
+  padding: 40px;
+  border-radius: 10px;
+  background: url('images/banner-board.png') no-repeat center left/cover;
+  background-size: 100% 100%; 
   color: #1C1C1C;
-  background-color: #E5F1FF;
+  text-align: left;
+  height:21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin:1px 5px;
 }
 
-/* User Info Section */
+.banner h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  background:rgba(255, 255, 255, 0.411);
+}
+
+.banner button {
+  padding: 8px 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #1C1C1C;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+/* 👤 User Info Section (Thoda Chhota Kar Dia) */
 .user-info {
+  flex: 0 0 18%; /* Pehle 20% tha, ab 18% */
+  max-width: 18%;
+  min-width: 180px;
   display: flex;
   flex-direction: column;
 }
@@ -182,49 +245,65 @@
   margin: 2%;
 }
 
-/* User Profile */
-.user-info .user-profile {  /* Corrected selector */
+.user-info .user-profile {
   border-radius: 6px;
   background: #E3F0FF;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* Buttons Inside User Profile */
+.user-profile div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🎨 Buttons Inside User Profile */
+.user-profile .btn1,
+.user-profile .btn2 {
+  width: 100%;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
 .user-profile .btn1 {
   background: linear-gradient(180deg, #127FFF 0%, #0067FF);
   color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
 }
 
 .user-profile .btn2 {
   background-color: #fff;
   color: #0D6EFD;
   border: 1px solid #DEE2E7;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
+  margin-top: 2px;
 }
 
-.user-info .discount{
+/* 🔥 Discount & Quotes Boxes */
+.user-info .discount,
+.user-info .quotes {
   border-radius: 6px;
-background: #F38332;
-color:#fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
 }
 
-.user-info .quotes{
-  border-radius: 6px;
-background: #55BDC3;
-color:#fff;
+.user-info .discount {
+  background: #F38332;
+  padding:15px 0px;
 }
 
-.banner-image{
-  position:relative
+.user-info .quotes {
+  background: #55BDC3;
+  padding:16px 0px;
 }
-.above-image{
-  position: absolute;
-  top:40px;
-  left:20px;
-}
+
+
+
