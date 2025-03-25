@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[#F7FAFC]">
+  <header class="bg-[#fff]">
+  <!-- navbar -->
+  <nav aria-label="Main Navigation" class="flex justify-between items-center p-3 ">
+    <!-- logo -->
+    <div class="flex items-center space-x-2">
+      <div class="relative w-12 h-12">
+        <img src="../assets/bagBg2.svg" alt="Bag Background 2" class="absolute left-2 w-full h-full z-10">
+        <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
+        <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+      </div>
+      <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
+    </div>
+    
+    <!-- search bar -->
+    <div class="w-full max-w-lg">
+      <form class="flex border-2 border-[#0067FF] rounded-md overflow-hidden">
+        <input type="text" placeholder="Search" aria-label="Search"
+          class="flex-grow px-4 py-2 outline-none">
+        <select aria-label="Category Selection"
+          class="border-l-2 border-[#0067FF] px-2 py-2 bg-white outline-none">
+          <option value="option1">All category</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <button type="submit"
+          class="bg-[#0067FF] text-white px-4 py-2 hover:bg-blue-600">Search</button>
+      </form>
+    </div>
+    
+
+    <!-- icons -->
+    <div class="flex space-x-5 ">
+      <button class="flex flex-col items-center hover:cursor-pointer">
+        <img src="../assets/profile.svg" alt="Profile Icon">
+        <p class="text-sm text-[#8B96A5] pt-[1.2px]">Profile</p>
+      </button>
+      <button class="flex flex-col items-center hover:cursor-pointer">
+        <img src="../assets/msg.svg" alt="Message Icon">
+        <p class="text-sm text-[#8B96A5] pt-[0.2px]">Message</p>
+      </button>
+      <button class="flex flex-col items-center hover:cursor-pointer">
+        <img src="../assets/fav.svg" alt="Favorite Icon">
+        <p class="text-sm text-[#8B96A5] pt-[2.8px]">Orders</p>
+      </button>
+      <button class="flex flex-col items-center hover:cursor-pointer">
+        <img src="../assets/cart.svg" alt="Cart Icon">
+        <p class="text-sm text-[#8B96A5]">My Cart</p>
+      </button>
+    </div>
+  </nav>
+  <!-- 2nd navbar -->
+  <nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
+    <div class="flex space-x-4">
+      <button class="text-xl hover:cursor-pointer">&#9776;</button>
+      <button class="hover:cursor-pointer">All Categories</button>
+      <button class="hover:cursor-pointer">Hot Offers</button>
+      <button class="hover:cursor-pointer">Gift Boxes</button>
+      <button class="hover:cursor-pointer">Projects</button>
+      <button class="hover:cursor-pointer">Menu Item</button>
+      <select class="hover:cursor-pointer">
+        <option value="">Help</option>
+      </select>
+    </div>
+    
+    <div>
+      <select class="hover:cursor-pointer">
+        <option value="en-usd">English, USD</option>
+      </select>
+      <select class="hover:cursor-pointer">
+        <option value="">Ship to</option>
+      </select>
+    </div>
+  </nav>
+  
+</header>
+<main>
+  <section class="flex border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff]">
+    <div class="mt-3 mb-3 ml-3 mr-0">
+      <ul class="space-y-2 text-[#505050]">
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Automobiles</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Clothes and wear</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Home interiors</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Computer and tech</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Tools, equipments</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Sports and outdoor</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Animal and pets</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Machinery tools</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">More category</li>
+      </ul>
+  </div>  
+
+      <div class="relative w-full max-w-lg mx-1 mt-3 mb-3 h-[300px]  bg-gray-100">
+        <img src="../assets/banner-board.png" alt="Electronic items" class="w-full h-full object-cover drop-shadow-2xl">
+        <div class="absolute top-1/4 left-6 text-black">
+            <h2 class="text-xl font-medium leading-tight">
+                Latest trending <br>
+                <strong class="font-bold">Electronic items</strong>
+            </h2>
+            <button class="mt-3 px-4 py-2 bg-white text-black hover:cursor-pointer rounded-md shadow-md flex justify-center">
+                Learn more
+            </button>
+        </div>
+    </div>
+       
+      <div class="mt-3 mb-3 ml-0 mr-3">
+        <div class="flex flex-col items-center space-y-2">
+          <div class="flex flex-col space-y-1.5 bg-[#E3F0FF] p-1 rounded-md px-2">
+            <div class="flex items-center">
+              <img src="../assets/avatar.jpg" alt="User Avatar" class="w-12 h-12 rounded-full"> 
+              <p class="text-[#505050] pl-2">Hi, user <br>Let's get started</p>
+            </div>
+            <button class="bg-gradient-to-b from-[#127FFF] to-[#0067FF] text-white border-none w-full py-1 rounded-md hover:cursor-pointer  items-center justify-center">Join now</button>
+            <button class="bg-white text-[#0D6EFD] border border-[#DEE2E7] w-full py-1 rounded-md mt-0.5 hover:cursor-pointer items-center justify-center">Log in</button>
+          </div>
+          <div class="bg-[#F38332] text-white rounded-md flex  items-center p-3  w-full">
+            <p>Get US $10 off <br>with a new <br>supplier</p>
+          </div>
+          <div class="bg-[#55BDC3] text-white rounded-md flex  items-center p-3  w-full">
+            <p>Send quotes with <br>supplier <br>preferences</p>
+          </div>
+        </div>
+      </div>    
+  </section>
+  <!-- section 2 -->
+  <section class=" p-4 rounded-lg shadow-md bg-[#fff]">
+    <div class="flex items-center space-x-6 bg-[#fff]">
+      <!-- Left Side: Countdown Timer -->
+      <div>
+        <h2 class="text-lg font-semibold text-gray-800">Deals and offers</h2>
+        <p class="text-sm text-gray-500">Hygiene equipments</p>
+        <div class="flex space-x-2 mt-2">
+          <div class="bg-gray-700 text-white px-3 py-1 rounded-md text-center">
+            <p class="text-sm font-bold">04</p>
+            <p class="text-xs">Days</p>
+          </div>
+          <div class="bg-gray-700 text-white px-3 py-1 rounded-md text-center">
+            <p class="text-sm font-bold">13</p>
+            <p class="text-xs">Hour</p>
+          </div>
+          <div class="bg-gray-700 text-white px-3 py-1 rounded-md text-center">
+            <p class="text-sm font-bold">34</p>
+            <p class="text-xs">Min</p>
+          </div>
+          <div class="bg-gray-700 text-white px-3 py-1 rounded-md text-center">
+            <p class="text-sm font-bold">56</p>
+            <p class="text-xs">Sec</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Side: Product List -->
+      <div class="flex space-x-6 overflow-x-auto">
+        <!-- Product Item -->
+        <div class="bg-white p-4 shadow-sm text-center border border-gray-200">
+          <img src="../assets/smartwatch.png" alt="Smart Watch" class="w-20 h-20 mx-auto">
+          <p class="text-sm text-gray-800 mt-2">Smart watches</p>
+          <p class="text-red-500 text-xs font-semibold">-25%</p>
+        </div>
+  
+        <div class="bg-white p-4 shadow-sm text-center border border-gray-200">
+          <img src="../assets/laptop.png" alt="Laptops" class="w-20 h-20 mx-auto">
+          <p class="text-sm text-gray-800 mt-2">Laptops</p>
+          <p class="text-red-500 text-xs font-semibold">-15%</p>
+        </div>
+  
+        <div class="bg-white p-4 shadow-sm text-center border border-gray-200">
+          <img src="../assets/gopro.png" alt="GoPro Camera" class="w-20 h-20 mx-auto">
+          <p class="text-sm text-gray-800 mt-2">GoPro cameras</p>
+          <p class="text-red-500 text-xs font-semibold">-40%</p>
+        </div>
+  
+        <div class="bg-white p-4 shadow-sm text-center border border-gray-200">
+          <img src="../assets/headphone.png" alt="Headphones" class="w-20 h-20 mx-auto">
+          <p class="text-sm text-gray-800 mt-2">Headphones</p>
+          <p class="text-red-500 text-xs font-semibold">-25%</p>
+        </div>
+  
+        <div class="bg-white p-4 shadow-sm text-center border border-gray-200">
+          <img src="../assets/canon.png" alt="Canon Camera" class="w-20 h-20 mx-auto">
+          <p class="text-sm text-gray-800 mt-2">Canon cameras</p>
+          <p class="text-red-500 text-xs font-semibold">-25%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>
+</body>
+</html>
