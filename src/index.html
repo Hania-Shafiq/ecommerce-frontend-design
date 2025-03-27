@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Brand</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/brand.svg">
 </head>
 <body class="bg-[#F7FAFC]">
   <header class="bg-[#fff]">
@@ -82,7 +83,7 @@
   </nav>
   
 </header>
-<main>
+<main >
   <section class="flex shadow-md border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff]">
     <div class="mt-3 mb-3 ml-3 mr-0">
       <ul class="space-y-2 text-[#505050]">
@@ -131,7 +132,7 @@
       </div>    
   </section>
   <!-- section 2 -->
-  <section class=" p-4 shadow-md flex border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff]">
+  <section class=" p-4 shadow-md flex border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff] overflow-x-auto">
     <div class="flex items-center space-x-6 bg-[#fff]">
       <!-- Left Side: Countdown Timer -->
       <div>
@@ -193,7 +194,7 @@
     </div>
   </section>
   <!-- section-3 -->
-  <section class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 " >
+  <section class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 overflow-x-auto" >
     <div class="relative">
       <img src="../assets/s3-bg.png" alt="bg pic">
       <div class="absolute top-1/9 left-6 text-black ">
@@ -271,7 +272,7 @@
     </div>
   </section>
   <!-- section 4 -->
-  <section class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 " >
+  <section class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 overflow-x-auto " >
     <div class="relative">
       <img src="../assets/s4.png" alt="bg pic">
       <div class="absolute top-1/9 left-6 text-black ">
@@ -348,7 +349,363 @@
       </div>
     </div>
   </section>
+  <!-- section-5 -->
+  <section class="relative mx-35 my-12 bg-cover bg-center py-10 px-5 " 
+  style="background: linear-gradient(95deg, #2C7CF1 7.19%, rgba(0, 209, 255, 0.50) 89.49%), url('../assets/s5-bg.png'); background-size: cover; background-position: center;">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
+
+<!-- LEFT SIDE: TEXT CONTENT -->
+<div class="text-white">
+<h2 class="text-2xl md:text-3xl font-bold">An easy way to send requests to all suppliers</h2>
+<p class="mt-2 text-sm md:text-base text-white/80">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+</p>
+</div>
+
+<!-- RIGHT SIDE: FORM CARD -->
+<div class="bg-white shadow-lg rounded-lg p-6">
+<h3 class="text-lg font-semibold mb-4">Send quote to suppliers</h3>
+
+<input type="text" placeholder="What item you need?" class="w-full border p-2 mb-3 rounded-md text-sm">
+<textarea placeholder="Type more details" class="w-full border p-2 mb-3 rounded-md text-sm overflow-auto resize-none"></textarea>
+
+<div class="flex space-x-3">
+  <input type="number" placeholder="Quantity" class="w-full border p-2 rounded-md text-sm">
+  <select class="border p-2 rounded-md text-sm">
+    <option>Pcs</option>
+    <option>Kg</option>
+    <option>Liters</option>
+  </select>
+</div>
+<button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">
+  Send inquiry
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 6 -->
+<!-- RECOMMENDED ITEMS SECTION -->
+<section class=" mx-35 my-12 ">
+  <h2 class="font-bold">Recommended items</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-[1200px] mx-auto">
+    <!-- ITEM CARD -->
+    <div class="border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full bg-white">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/tshirt.png" alt="T-shirt" class="max-w-[120px] max-h-[90px] object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$10.30</p>
+      <p class="text-sm">T-shirts with multiple colors, for men</p>
+    </div>
   
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/jeans-shorts.jpg" alt="Jeans shorts" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$10.30</p>
+      <p class="text-sm">Jeans shorts for men, blue color</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/winters-coat.jpg" alt="Winter coat" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$12.50</p>
+      <p class="text-sm">Brown winter coat, medium size</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/jeans-bag.jpg" alt="Jeans bag" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$34.00</p>
+      <p class="text-sm">Jeans bag for travel, for men</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/leather-wallet.jpg" alt="Leather wallet" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$99.00</p>
+      <p class="text-sm">Leather wallet</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/canon.png" alt="Canon camera" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$9.99</p>
+      <p class="text-sm">Canon camera, black, 100x zoom</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/headset.png" alt="Headset" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$8.99</p>
+      <p class="text-sm">Headset for gaming, with mic</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/jeans-bag.jpg" alt="Smartwatch" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$10.30</p>
+      <p class="text-sm">Smartwatch, silver color, modern</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/sw.png" alt="Clay pot" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$10.30</p>
+      <p class="text-sm">Clay pot, handmade</p>
+    </div>
+  
+    <div class="bg-white border rounded-lg p-3 text-[#8B96A5] flex flex-col items-center h-full">
+      <div class="flex-1 flex items-center justify-center w-full">
+        <img src="../assets/thermos.png" alt="Kettle" class="w-full h-full object-contain">
+      </div>
+      <p class="text-black font-semibold mt-2">$80.95</p>
+      <p class="text-sm">Electric kettle, modern design</p>
+    </div>
+  </div>
+  
+</section>
+
+<!-- section 7 -->
+<section class="mx-35 my-12">
+<div class=" p-0 m-2">
+  <!-- Extra Services -->
+  <h2 class="text-lg font-semibold mb-4">Our extra services</h2>
+  <div class="flex m-2">
+  <!-- Card 1 -->
+<div class="relative bg-white rounded-md shadow p-0 m-1 flex flex-col">
+  <img src="../assets/industry-hub.jpg" alt="Industry Hubs" class="rounded-lg mb-3">
+  <p class="font-semibold p-4 bg-white">Source from <br>Industry Hubs</p>
+
+  <!-- Search Icon Right Side -->
+  <div class="absolute top-1/3 border-2 border-white rounded-full p-3" style="background-color: #D1E7FF; border:3px solid #fff; right:0;">
+    <img src="../assets/search-icon.svg" alt="">
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="relative bg-white rounded-md shadow p-0 m-1 flex flex-col">
+  <img src="../assets/cpro.png" alt="Customize Products" class="rounded-lg mb-3">
+  <p class="font-semibold p-4 bg-white">Customize Your <br>Products</p>
+
+  <!-- Search Icon Right Side -->
+  <div class="absolute top-1/3 border-2 border-white rounded-full p-3" style="background-color: #D1E7FF; border:3px solid #fff; right:0;">
+    <img src="../assets/i1.svg" alt="">
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="relative bg-white rounded-md shadow p-0 m-1 flex flex-col">
+  <img src="../assets/shipping.png" alt="Shipping" class="rounded-lg mb-3">
+  <p class="font-semibold p-4 bg-white">Fast, reliable shipping by ocean or air</p>
+
+  <!-- Search Icon Right Side -->
+  <div class="absolute top-1/3 border-2 border-white rounded-full p-3" style="background-color: #D1E7FF; border:3px solid #fff; right:0;">
+    <img src="../assets/i2.svg" alt="">
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="relative bg-white rounded-md shadow p-0 m-1 flex flex-col">
+  <img src="../assets/pmonitor.png" alt="Product Monitoring" class="rounded-lg mb-3">
+  <p class="font-semibold p-4 bg-white">Product monitoring and inspection</p>
+
+  <!-- Search Icon Right Side -->
+  <div class="absolute top-1/3 border-2 border-white rounded-full p-3" style="background-color: #D1E7FF; border:3px solid #fff; right:0;">
+    <img src="../assets/i3.svg" alt="">
+  </div>
+</div>
+
+  </div>
+<br><br>
+  <!-- Suppliers by Region -->
+  <h2 class="text-lg font-semibold mt-8 mb-4">Suppliers by region</h2>
+  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
+    <div class="flex items-center space-x-2">
+      <img src="../assets/ae-flag.png" alt="UAE" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Arabic Emirates</p>
+        <p class="text-xs text-gray-500">shopname.ae</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/a-flag.png" alt="Australia" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Australia</p>
+        <p class="text-xs text-gray-500">shopname.au</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/us-flag.png" alt="USA" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">United States</p>
+        <p class="text-xs text-gray-500">shopname.us</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/r-flag.png" alt="Russia" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Russia</p>
+        <p class="text-xs text-gray-500">shopname.ru</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/i-flag.png" alt="Italy" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Italy</p>
+        <p class="text-xs text-gray-500">shopname.it</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/d-flag.png" alt="UAE" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Denmark</p>
+        <p class="text-xs text-gray-500">shopname.ae</p>
+      </div>
+    </div>
+    
+    <div class="flex items-center space-x-2">
+      <img src="../assets/f-flag.png" alt="Australia" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">France</p>
+        <p class="text-xs text-gray-500">shopname.au</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/ae-flag.png" alt="USA" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Arabic Emirates</p>
+        <p class="text-xs text-gray-500">shopname.us</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/c-flag.png" alt="Russia" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">China</p>
+        <p class="text-xs text-gray-500">shopname.ru</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="../assets/gb-flag.png" alt="Italy" class="w-6 h-4">
+      <div>
+        <p class="font-semibold text-sm">Great Britain</p>
+        <p class="text-xs text-gray-500">shopname.it</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 </main>
+<!-- Footer -->
+<footer class="bg-gray-100 ">
+  <!-- Newsletter Section -->
+  <div class="text-center p-6 border-b border-gray-300">
+    <h2 class="font-semibold text-lg">Subscribe on our newsletter</h2>
+    <p class="text-gray-600 text-sm">Get daily news on upcoming offers from many suppliers all over the world</p>
+    <div class="m-3 flex flex-wrap justify-center gap-2">
+      <input type="email" placeholder="&#9993; Email" class="border rounded-md px-3 py-2 w-64">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-md">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Main Footer Section -->
+  <div class=" px-35 py-12 bg-white w-full">
+<!-- Main Footer Grid -->
+<div class="container px-6 py-10 grid grid-cols-12 gap-10 bg-white">
+
+  <!-- Brand Info (Colspan 3) -->
+  <div class="col-span-12 md:col-span-3 space-y-3">
+    <div class="flex items-center space-x-2">
+      <div class="relative w-12 h-12">
+        <img src="../assets/bagBg2.svg" alt="Bag Background 2" class="absolute left-2 w-full h-full z-10">
+        <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
+        <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+      </div>
+      <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
+    </div>
+    <p class="text-gray-600">Best information about the company goes here but now lorem ipsum is</p>
+    <div class="flex space-x-3">
+      <img src="../assets/fb.svg" alt="Facebook">
+      <img src="../assets/twitter.svg" alt="Twitter">
+      <img src="../assets/link.svg" alt="LinkedIn">
+      <img src="../assets/insta.svg" alt="Instagram">
+      <img src="../assets/youtube.svg" alt="YouTube">
+    </div>
+  </div>
+
+  <!-- Other 5 Sections (Colspan 9 with Inner Grid) -->
+  <div class="col-span-12 md:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+    
+    <div>
+      <h3 class="font-semibold">About</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>About Us</li>
+        <li>Find Store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Partnership</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>About Us</li>
+        <li>Find Store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Information</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">For Users</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>Login</li>
+        <li>Register</li>
+        <li>Settings</li>
+        <li>My Orders</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col items-center lg:items-start">
+      <h3 class="font-semibold">Get App</h3>
+      <div class="mt-2">
+        <img src="../assets/appstore.svg" alt="App Store" class="mb-2">
+        <img src="../assets/googleplay.svg" alt="Google Play">
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div> 
+  </div>
+
+ <!-- Bottom Footer -->
+<div class="text-center py-4 border-t border-gray-300 flex flex-col md:flex-row items-center justify-between px-6">
+  <p class="text-gray-600 text-sm">© 2025 Ecommerce.</p>
+  <div class="flex items-center space-x-2">
+    <img src="../assets/us-flag.png" alt="US Flag" class="w-5">
+    <select class="border rounded-md px-2 py-1 text-sm">
+      <option>English</option>
+    </select>
+  </div>
+</div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="bg-[#fff]">
+    <!-- navbar -->
+    <nav aria-label="Main Navigation" class="flex justify-between items-center p-3 ">
+      <!-- logo -->
+      <div class="flex items-center space-x-2">
+        <div class="relative w-12 h-12">
+          <img src="../assets/bagBg2.svg" alt="Bag Background 2" class="absolute left-2 w-full h-full z-10">
+          <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
+          <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+        </div>
+        <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
+      </div> 
+      <!-- search bar -->
+      <div class="w-full max-w-lg">
+        <form class="flex border-2 border-[#0067FF] rounded-md overflow-hidden">
+          <input type="text" placeholder="Search" aria-label="Search"
+            class="flex-grow px-4 py-2 outline-none">
+          <select aria-label="Category Selection"
+            class="border-l-2 border-[#0067FF] px-2 py-2 bg-white outline-none">
+            <option value="option1">All category</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          <button type="submit"
+            class="bg-[#0067FF] text-white px-4 py-2 hover:bg-blue-600">Search</button>
+        </form>
+      </div>
+      
+  
+      <!-- icons -->
+      <div class="flex space-x-5 ">
+        <button class="flex flex-col items-center hover:cursor-pointer">
+          <img src="../assets/profile.svg" alt="Profile Icon">
+          <p class="text-sm text-[#8B96A5] pt-[1.2px]">Profile</p>
+        </button>
+        <button class="flex flex-col items-center hover:cursor-pointer">
+          <img src="../assets/msg.svg" alt="Message Icon">
+          <p class="text-sm text-[#8B96A5] pt-[0.2px]">Message</p>
+        </button>
+        <button class="flex flex-col items-center hover:cursor-pointer">
+          <img src="../assets/fav.svg" alt="Favorite Icon">
+          <p class="text-sm text-[#8B96A5] pt-[2.8px]">Orders</p>
+        </button>
+        <button class="flex flex-col items-center hover:cursor-pointer">
+          <img src="../assets/cart.svg" alt="Cart Icon">
+          <p class="text-sm text-[#8B96A5]">My Cart</p>
+        </button>
+      </div>
+    </nav>
+    <!-- 2nd navbar -->
+    <nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
+      <div class="flex space-x-4">
+        <button class="text-xl hover:cursor-pointer">&#9776;</button>
+        <button class="hover:cursor-pointer">All Categories</button>
+        <button class="hover:cursor-pointer">Hot Offers</button>
+        <button class="hover:cursor-pointer">Gift Boxes</button>
+        <button class="hover:cursor-pointer">Projects</button>
+        <button class="hover:cursor-pointer">Menu Item</button>
+        <select class="hover:cursor-pointer">
+          <option value="">Help</option>
+        </select>
+      </div>
+      <div>
+        <select class="hover:cursor-pointer">
+          <option value="en-usd">English, USD</option>
+        </select>
+        <select class="hover:cursor-pointer">
+          <option value="">Ship to</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Breadcrumb -->
+  <div class="text-sm text-gray-400 p-4r">
+    Home > Electronics > Mobile Accessories
+  </div>
+  
+    <div class="container mx-auto flex gap-6 p-4">
+      <!-- Sidebar Filters -->
+      <aside class="w-1/4 bg-white p-4 rounded-lg shadow">
+          <h2 class="font-semibold text-lg mb-4">Category <span class="text-gray-400">^</span></h2>
+          <ul class="space-y-2">
+              <li> Mobile accessory</li>
+              <li> Electronics</li>
+              <li> Smartphones</li>
+              <li> Modern tech</li>
+              <li class="text-blue-400 hover:cursor-pointer">See all</li>
+          </ul>
+          
+          <h2 class="font-semibold text-lg mt-6">Brands</h2>
+          <ul class="space-y-2">
+              <li><input type="checkbox"> Samsung</li>
+              <li><input type="checkbox"> Apple</li>
+              <li><input type="checkbox"> Huawei</li>
+              <li><input type="checkbox"> Poco</li>
+              <li><input type="checkbox"> Lenovo</li>
+          </ul>
+  
+          <h2 class="font-semibold text-lg mt-6">Price range</h2>
+          <input type="range" class="w-full">
+  
+          <h2 class="font-semibold text-lg mt-6">Ratings</h2>
+          <div class="flex space-x-1">
+              ⭐⭐⭐⭐⭐
+          </div>
+      </aside>
+  
+      <!-- Product Listing Section -->
+      <section class="w-3/4">
+          
+          <!-- Sorting & Filters -->
+          <div class="flex justify-between items-center mb-4">
+              <span class="text-lg font-semibold">12,911 items in Mobile accessory</span>
+              <div class="flex items-center space-x-4">
+                  <button class="border p-2 rounded-md">Verified only</button>
+                  <select class="border p-2 rounded-md">
+                      <option>Featured</option>
+                  </select>
+              </div>
+          </div>
+  
+          <!-- Products List -->
+          <div class="space-y-4">
+              
+              <!-- Product Card -->
+              <div class="bg-white p-4 rounded-lg shadow flex items-start gap-4">
+                  <img src="https://via.placeholder.com/100" alt="Product" class="w-24 h-24 object-cover">
+                  <div>
+                      <h3 class="font-semibold text-lg">Canon Camera EOS 2000, Black 10x zoom</h3>
+                      <p class="text-gray-700">
+                          <span class="text-red-500 text-xl font-bold">$998.00</span>
+                          <span class="line-through text-gray-400">$1128.00</span>
+                          <span class="text-green-500 font-semibold">Free Shipping</span>
+                      </p>
+                      <p class="text-yellow-500">⭐⭐⭐⭐⭐ 7.5 - 154 orders</p>
+                      <a href="#" class="text-blue-500">View details</a>
+                  </div>
+              </div>
+  
+              <!-- More Product Cards -->
+              <div class="bg-white p-4 rounded-lg shadow flex items-start gap-4">
+                  <img src="https://via.placeholder.com/100" alt="Product" class="w-24 h-24 object-cover">
+                  <div>
+                      <h3 class="font-semibold text-lg">GoPro HERO6 4K Action Camera - Black</h3>
+                      <p class="text-gray-700">
+                          <span class="text-red-500 text-xl font-bold">$998.00</span>
+                          <span class="text-green-500 font-semibold">Free Shipping</span>
+                      </p>
+                      <p class="text-yellow-500">⭐⭐⭐⭐⭐ 7.5 - 154 orders</p>
+                      <a href="#" class="text-blue-500">View details</a>
+                  </div>
+              </div>
+  
+              <div class="bg-white p-4 rounded-lg shadow flex items-start gap-4">
+                  <img src="https://via.placeholder.com/100" alt="Product" class="w-24 h-24 object-cover">
+                  <div>
+                      <h3 class="font-semibold text-lg">GoPro HERO8 4K Action Camera - Black</h3>
+                      <p class="text-gray-700">
+                          <span class="text-red-500 text-xl font-bold">$998.00</span>
+                          <span class="text-green-500 font-semibold">Free Shipping</span>
+                      </p>
+                      <p class="text-yellow-500">⭐⭐⭐⭐⭐ 7.5 - 154 orders</p>
+                      <a href="#" class="text-blue-500">View details</a>
+                  </div>
+              </div>
+  
+          </div>
+  
+          <!-- Pagination -->
+          <div class="flex justify-between items-center mt-6">
+              <span>Show 10</span>
+              <div class="flex space-x-2">
+                  <button class="border px-3 py-1 rounded-md">&lt;</button>
+                  <button class="border px-3 py-1 rounded-md bg-blue-500 text-white">1</button>
+                  <button class="border px-3 py-1 rounded-md">2</button>
+                  <button class="border px-3 py-1 rounded-md">3</button>
+                  <button class="border px-3 py-1 rounded-md">&gt;</button>
+              </div>
+          </div>
+      </section>
+  </div>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-100 ">
+  <!-- Newsletter Section -->
+  <div class="text-center p-6 border-b border-gray-300">
+    <h2 class="font-semibold text-lg">Subscribe on our newsletter</h2>
+    <p class="text-gray-600 text-sm">Get daily news on upcoming offers from many suppliers all over the world</p>
+    <div class="m-3 flex flex-wrap justify-center gap-2">
+      <input type="email" placeholder="&#9993; Email" class="border rounded-md px-3 py-2 w-64">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-md">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Main Footer Section -->
+  <div class=" px-35 py-12 bg-white w-full">
+<div class="container px-6 py-10 grid grid-cols-12 gap-10 bg-white">
+
+  <div class="col-span-12 md:col-span-3 space-y-3">
+    <div class="flex items-center space-x-2">
+      <div class="relative w-12 h-12">
+        <img src="../assets/bagBg2.svg" alt="Bag Background 2" class="absolute left-2 w-full h-full z-10">
+        <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
+        <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+      </div>
+      <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
+    </div>
+    <p class="text-gray-600">Best information about the company goes here but now lorem ipsum is</p>
+    <div class="flex space-x-3">
+      <img src="../assets/fb.svg" alt="Facebook">
+      <img src="../assets/twitter.svg" alt="Twitter">
+      <img src="../assets/link.svg" alt="LinkedIn">
+      <img src="../assets/insta.svg" alt="Instagram">
+      <img src="../assets/youtube.svg" alt="YouTube">
+    </div>
+  </div>
+
+  <!-- Other 5 Sections (Colspan 9 with Inner Grid) -->
+  <div class="col-span-12 md:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+    
+    <div>
+      <h3 class="font-semibold">About</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>About Us</li>
+        <li>Find Store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Partnership</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>About Us</li>
+        <li>Find Store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Information</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">For Users</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>Login</li>
+        <li>Register</li>
+        <li>Settings</li>
+        <li>My Orders</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col items-center lg:items-start">
+      <h3 class="font-semibold">Get App</h3>
+      <div class="mt-2">
+        <img src="../assets/appstore.svg" alt="App Store" class="mb-2">
+        <img src="../assets/googleplay.svg" alt="Google Play">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div> 
+  </div>
+ <!-- Bottom Footer -->
+<div class="text-center py-4 border-t border-gray-300 flex flex-col md:flex-row items-center justify-between px-6">
+  <p class="text-gray-600 text-sm">© 2025 Ecommerce.</p>
+  <div class="flex items-center space-x-2">
+    <img src="../assets/us-flag.png" alt="US Flag" class="w-5">
+    <select class="border rounded-md px-2 py-1 text-sm">
+      <option>English</option>
+    </select>
+  </div>
+</div>
+</footer>
+
+
+  
+</body>
+</html>
