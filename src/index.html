@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brand</title>
+  <title>Homepage</title>
   <link href="./output.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/brand.svg">
 </head>
@@ -18,7 +18,7 @@
         <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
         <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
       </div>
-      <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
+      <a href="index.html" class="hover:cursor"><img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]"></a>
     </div>
     
     <!-- search bar -->
@@ -54,40 +54,66 @@
       </button>
       <button class="flex flex-col items-center hover:cursor-pointer">
         <img src="../assets/cart.svg" alt="Cart Icon">
-        <p class="text-sm text-[#8B96A5]">My Cart</p>
+        <p class="text-sm text-[#8B96A5]"><a href="index5.html">My Cart</a>
+        </p>
       </button>
     </div>
   </nav>
-  <!-- 2nd navbar -->
-  <nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
-    <div class="flex space-x-4">
-      <button class="text-xl hover:cursor-pointer">&#9776;</button>
-      <button class="hover:cursor-pointer">All Categories</button>
-      <button class="hover:cursor-pointer">Hot Offers</button>
-      <button class="hover:cursor-pointer">Gift Boxes</button>
-      <button class="hover:cursor-pointer">Projects</button>
-      <button class="hover:cursor-pointer">Menu Item</button>
-      <select class="hover:cursor-pointer">
-        <option value="">Help</option>
-      </select>
-    </div>
-    
-    <div>
-      <select class="hover:cursor-pointer">
-        <option value="en-usd">English, USD</option>
-      </select>
-      <select class="hover:cursor-pointer">
-        <option value="">Ship to</option>
-      </select>
-    </div>
-  </nav>
+<!-- 2nd Navbar -->
+<nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
+  <div class="flex space-x-4">
+    <!-- Hamburger Button -->
+    <button id="menuBtn" class="text-xl hover:cursor-pointer">&#9776;</button>
+    <button class="hover:cursor-pointer"><a href="#all-cat">All Categories</a></button>
+    <button class="hover:cursor-pointer"><a href="#hot-offers">Hot Offers</a></button>
+    <button class="hover:cursor-pointer" id="giftBoxesBtn"><a href="#">Gift Boxes</a></button>
+    <button class="hover:cursor-pointer" id="menuItemBtn" ><a href="#">Projects</a></button>
+    <button class="hover:cursor-pointer"><a href="#menu-items">Menu Item</a></button>
+    <select class="hover:cursor-pointer">
+    <option value="">Help</option>
+    </select>
+  </div>
+
+  <div>
+    <select class="hover:cursor-pointer">
+      <option value="en-usd" selected>English, USD</option>
+      <option value="en-eur">English, EUR</option>
+      <option value="en-gbp">English, GBP</option>
+      <option value="en-cad">English, CAD</option>
+      <option value="en-aud">English, AUD</option>
+      <option value="en-aud">English, PKR</option>
+    </select>
+    <select class="hover:cursor-pointer border border-gray-300 rounded px-3 py-1  bg-white text-gray-700">
+      <option value="" selected disabled>Ship to</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ca">Canada</option>
+      <option value="au">Australia</option>
+      <option value="de">Germany</option>
+      <option value="pk">Pakistan</option>
+    </select>
+  </div>
+</nav>
+
+<!-- Sidebar (Initially Hidden) -->
+<div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-all duration-800 z-50 ">
+  <button id="closeSidebar" class="p-4 text-2xl">&times;</button>
+  <ul class="p-4 space-y-2">
+    <li><a href="#all-cat" class="block hover:text-blue-500">All Categories</a></li>
+    <li><a href="#hot-offers" class="block hover:text-blue-500">Hot Offers</a></li>
+    <li ><a href="#" class="block hover:text-blue-500">Gift Boxes</a></li>
+    <li><a href="#" class="block hover:text-blue-500">Projects</a></li>
+    <li><a href="#menu-items" class="block hover:text-blue-500">Menu Item</a></li>
+  </ul>
+</div>
+
 </header>
 <!-- main -->
 <main >
   <section class="flex shadow-md border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff]">
     <div class="mt-3 mb-3 ml-3 mr-0">
       <ul class="space-y-2 text-[#505050]">
-          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Automobiles</li>
+          <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer"><a href="index1.html">Automobiles</a></li>
           <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Clothes and wear</li>
           <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Home interiors</li>
           <li class="hover:bg-[#E5F1FF] hover:text-[#1c1c1c] hover:font-medium p-1 rounded-md cursor-pointer">Computer and tech</li>
@@ -107,7 +133,7 @@
                 <strong class="font-bold">Electronic items</strong>
             </h2>
             <button class="mt-3 px-4 py-2 bg-white text-black hover:cursor-pointer rounded-md shadow-md flex justify-center">
-                Learn more
+                <a href="index1.html">Learn more</a>
             </button>
         </div>
     </div>
@@ -132,7 +158,7 @@
       </div>    
   </section>
   <!-- section 2 -->
-  <section class=" p-4 shadow-md flex border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff] overflow-x-auto">
+  <section id="hot-offers"  class=" p-4 shadow-md flex border-1 border-[#E0E0E0] mx-35 my-12 justify-between rounded-sm bg-[#fff] overflow-x-auto">
     <div class="flex items-center space-x-6 bg-[#fff]">
       <!-- Left Side: Countdown Timer -->
       <div>
@@ -194,7 +220,7 @@
     </div>
   </section>
   <!-- section-3 -->
-  <section class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 overflow-x-auto" >
+  <section id="all-cat" class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 overflow-x-auto" >
     <div class="relative">
       <img src="../assets/s3-bg.png" alt="bg pic">
       <div class="absolute top-1/9 left-6 text-black ">
@@ -272,7 +298,7 @@
     </div>
   </section>
   <!-- section 4 -->
-  <section class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 overflow-x-auto " >
+  <section  class="flex bg-white shadow-md border-1 border-[#E0E0E0] rounded-md  mx-35 my-12 overflow-x-auto " >
     <div class="relative">
       <img src="../assets/s4.png" alt="bg pic">
       <div class="absolute top-1/9 left-6 text-black ">
@@ -350,7 +376,7 @@
     </div>
   </section>
   <!-- section-5 -->
-  <section class="relative mx-35 my-12 bg-cover bg-center py-10 px-5 " 
+  <section  class="relative mx-35 my-12 bg-cover bg-center py-10 px-5 " 
   style="background: linear-gradient(95deg, #2C7CF1 7.19%, rgba(0, 209, 255, 0.50) 89.49%), url('../assets/s5-bg.png'); background-size: cover; background-position: center;">
 
 <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
@@ -386,7 +412,7 @@
 </section>
 <!-- SECTION 6 -->
 <!-- RECOMMENDED ITEMS SECTION -->
-<section class=" mx-35 my-12 ">
+<section id="menu-items" class=" mx-35 my-12 ">
   <h2 class="font-bold">Recommended items</h2>
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-[1200px] mx-auto">
     <!-- ITEM CARD -->
@@ -614,13 +640,9 @@
       <button class="bg-blue-600 text-white px-4 py-2 rounded-md">Subscribe</button>
     </div>
   </div>
-
   <!-- Main Footer Section -->
   <div class=" px-35 py-12 bg-white w-full">
-<!-- Main Footer Grid -->
 <div class="container px-6 py-10 grid grid-cols-12 gap-10 bg-white">
-
-  <!-- Brand Info (Colspan 3) -->
   <div class="col-span-12 md:col-span-3 space-y-3">
     <div class="flex items-center space-x-2">
       <div class="relative w-12 h-12">
@@ -639,8 +661,6 @@
       <img src="../assets/youtube.svg" alt="YouTube">
     </div>
   </div>
-
-  <!-- Other 5 Sections (Colspan 9 with Inner Grid) -->
   <div class="col-span-12 md:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
     
     <div>
@@ -707,5 +727,6 @@
   </div>
 </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

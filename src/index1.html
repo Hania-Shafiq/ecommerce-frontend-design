@@ -18,8 +18,9 @@
           <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
           <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         </div>
-        <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
-      </div> 
+        <a href="index.html" class="hover:cursor"><img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]"></a>
+      </div>
+      
       <!-- search bar -->
       <div class="w-full max-w-lg">
         <form class="flex border-2 border-[#0067FF] rounded-md overflow-hidden">
@@ -53,32 +54,59 @@
         </button>
         <button class="flex flex-col items-center hover:cursor-pointer">
           <img src="../assets/cart.svg" alt="Cart Icon">
-          <p class="text-sm text-[#8B96A5]">My Cart</p>
+          <p class="text-sm text-[#8B96A5]"><a href="index5.html">My Cart</a>
+          </p>
         </button>
       </div>
     </nav>
-    <!-- 2nd navbar -->
-    <nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
-      <div class="flex space-x-4">
-        <button class="text-xl hover:cursor-pointer">&#9776;</button>
-        <button class="hover:cursor-pointer">All Categories</button>
-        <button class="hover:cursor-pointer">Hot Offers</button>
-        <button class="hover:cursor-pointer">Gift Boxes</button>
-        <button class="hover:cursor-pointer">Projects</button>
-        <button class="hover:cursor-pointer">Menu Item</button>
-        <select class="hover:cursor-pointer">
-          <option value="">Help</option>
-        </select>
-      </div>
-      <div>
-        <select class="hover:cursor-pointer">
-          <option value="en-usd">English, USD</option>
-        </select>
-        <select class="hover:cursor-pointer">
-          <option value="">Ship to</option>
-        </select>
-      </div>
-    </nav>
+  <!-- 2nd Navbar -->
+  <nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
+    <div class="flex space-x-4">
+      <!-- Hamburger Button -->
+      <button id="menuBtn" class="text-xl hover:cursor-pointer">&#9776;</button>
+      <button class="hover:cursor-pointer"><a href="#all-cat">All Categories</a></button>
+      <button class="hover:cursor-pointer"><a href="#hot-offers">Hot Offers</a></button>
+      <button class="hover:cursor-pointer" id="giftBoxesBtn"><a href="#">Gift Boxes</a></button>
+      <button class="hover:cursor-pointer" id="menuItemBtn" ><a href="#">Projects</a></button>
+      <button class="hover:cursor-pointer"><a href="#menu-items">Menu Item</a></button>
+      <select class="hover:cursor-pointer">
+      <option value="">Help</option>
+      </select>
+    </div>
+  
+    <div>
+      <select class="hover:cursor-pointer">
+        <option value="en-usd" selected>English, USD</option>
+        <option value="en-eur">English, EUR</option>
+        <option value="en-gbp">English, GBP</option>
+        <option value="en-cad">English, CAD</option>
+        <option value="en-aud">English, AUD</option>
+        <option value="en-aud">English, PKR</option>
+      </select>
+      <select class="hover:cursor-pointer border border-gray-300 rounded px-3 py-1  bg-white text-gray-700">
+        <option value="" selected disabled>Ship to</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <option value="au">Australia</option>
+        <option value="de">Germany</option>
+        <option value="pk">Pakistan</option>
+      </select>
+    </div>
+  </nav>
+  
+  <!-- Sidebar (Initially Hidden) -->
+  <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-all duration-800 z-50 ">
+    <button id="closeSidebar" class="p-4 text-2xl">&times;</button>
+    <ul class="p-4 space-y-2">
+      <li><a href="#all-cat" class="block hover:text-blue-500">All Categories</a></li>
+      <li><a href="#hot-offers" class="block hover:text-blue-500">Hot Offers</a></li>
+      <li ><a href="#" class="block hover:text-blue-500">Gift Boxes</a></li>
+      <li><a href="#" class="block hover:text-blue-500">Projects</a></li>
+      <li><a href="#menu-items" class="block hover:text-blue-500">Menu Item</a></li>
+    </ul>
+  </div>
+  
   </header>
   <!-- main -->
   <main>
@@ -227,8 +255,8 @@
           <option>Featured</option>
       </select>
       <div class="flex space-x-1 border-l pl-2">
-          <button class="p-2 rounded border-gray-400 hover:bg-gray-200 text-2xl">&#x229E;</button>
-          <button class="p-2 rounded border-gray-400 hover:bg-gray-200 text-2xl">&#x229F;</button>
+          <button class="p-2 rounded border-gray-400 hover:bg-gray-200 text-2xl"><a href="index2.html">&#x229E;</a></button>
+          <button class="p-2 rounded border-gray-400 hover:bg-gray-200 text-2xl"><a href="index1.html">&#x229F;</a></button>
       </div>
   </div>
 </div>

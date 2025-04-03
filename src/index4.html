@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/brand.svg">
+  <title>Product</title>
+</head>
+<body>
+  <header>
+    <header class="bg-[#fff]">
+      <!-- navbar -->
+      <nav aria-label="Main Navigation" class="flex justify-between items-center p-3 ">
+        <!-- logo -->
+        <div class="flex items-center space-x-2">
+          <div class="relative w-12 h-12">
+            <img src="../assets/bagBg2.svg" alt="Bag Background 2" class="absolute left-2 w-full h-full z-10">
+            <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
+            <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+          </div>
+          <a href="index.html" class="hover:cursor"><img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]"></a>
+        </div>
+        
+        <!-- search bar -->
+        <div class="w-full max-w-lg">
+          <form class="flex border-2 border-[#0067FF] rounded-md overflow-hidden">
+            <input type="text" placeholder="Search" aria-label="Search"
+              class="flex-grow px-4 py-2 outline-none">
+            <select aria-label="Category Selection"
+              class="border-l-2 border-[#0067FF] px-2 py-2 bg-white outline-none">
+              <option value="option1">All category</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+            <button type="submit"
+              class="bg-[#0067FF] text-white px-4 py-2 hover:bg-blue-600">Search</button>
+          </form>
+        </div>
+        
+    
+        <!-- icons -->
+        <div class="flex space-x-5 ">
+          <button class="flex flex-col items-center hover:cursor-pointer">
+            <img src="../assets/profile.svg" alt="Profile Icon">
+            <p class="text-sm text-[#8B96A5] pt-[1.2px]">Profile</p>
+          </button>
+          <button class="flex flex-col items-center hover:cursor-pointer">
+            <img src="../assets/msg.svg" alt="Message Icon">
+            <p class="text-sm text-[#8B96A5] pt-[0.2px]">Message</p>
+          </button>
+          <button class="flex flex-col items-center hover:cursor-pointer">
+            <img src="../assets/fav.svg" alt="Favorite Icon">
+            <p class="text-sm text-[#8B96A5] pt-[2.8px]">Orders</p>
+          </button>
+          <button class="flex flex-col items-center hover:cursor-pointer">
+            <img src="../assets/cart.svg" alt="Cart Icon">
+            <p class="text-sm text-[#8B96A5]"><a href="index5.html">My Cart</a>
+            </p>
+          </button>
+        </div>
+      </nav>
+    <!-- 2nd Navbar -->
+    <nav class="border-t border-b border-[#E0E0E0] flex justify-between items-center p-2">
+      <div class="flex space-x-4">
+        <!-- Hamburger Button -->
+        <button id="menuBtn" class="text-xl hover:cursor-pointer">&#9776;</button>
+        <button class="hover:cursor-pointer"><a href="#all-cat">All Categories</a></button>
+        <button class="hover:cursor-pointer"><a href="#hot-offers">Hot Offers</a></button>
+        <button class="hover:cursor-pointer" id="giftBoxesBtn"><a href="#">Gift Boxes</a></button>
+        <button class="hover:cursor-pointer" id="menuItemBtn" ><a href="#">Projects</a></button>
+        <button class="hover:cursor-pointer"><a href="#menu-items">Menu Item</a></button>
+        <select class="hover:cursor-pointer">
+        <option value="">Help</option>
+        </select>
+      </div>
+    
+      <div>
+        <select class="hover:cursor-pointer">
+          <option value="en-usd" selected>English, USD</option>
+          <option value="en-eur">English, EUR</option>
+          <option value="en-gbp">English, GBP</option>
+          <option value="en-cad">English, CAD</option>
+          <option value="en-aud">English, AUD</option>
+          <option value="en-aud">English, PKR</option>
+        </select>
+        <select class="hover:cursor-pointer border border-gray-300 rounded px-3 py-1  bg-white text-gray-700">
+          <option value="" selected disabled>Ship to</option>
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+          <option value="de">Germany</option>
+          <option value="pk">Pakistan</option>
+        </select>
+      </div>
+    </nav>
+    
+    <!-- Sidebar (Initially Hidden) -->
+    <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-all duration-800 z-50 ">
+      <button id="closeSidebar" class="p-4 text-2xl">&times;</button>
+      <ul class="p-4 space-y-2">
+        <li><a href="#all-cat" class="block hover:text-blue-500">All Categories</a></li>
+        <li><a href="#hot-offers" class="block hover:text-blue-500">Hot Offers</a></li>
+        <li ><a href="#" class="block hover:text-blue-500">Gift Boxes</a></li>
+        <li><a href="#" class="block hover:text-blue-500">Projects</a></li>
+        <li><a href="#menu-items" class="block hover:text-blue-500">Menu Item</a></li>
+      </ul>
+    </div>
+    
+    </header>
+  </header>
+  <!-- main -->
+  <!-- Product Page Container -->
+<div class="max-w-6xl mx-auto p-6 bg-white">
+  
+  <!-- Breadcrumbs -->
+  <nav class="text-gray-500 text-sm mb-4">
+    Home > Clothings > Men's wear > <span class="text-gray-800">Summer clothing</span>
+  </nav>
+
+  <!-- Product Details Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 border rounded-lg shadow-sm bg-white">
+
+  <!-- Left: Product Image & Thumbnails -->
+  <div class="md:col-span-1">
+    <img src="../assets/cart.png" alt="T-Shirt" class="w-full rounded-lg shadow-md border border-gray-300">
+    <div class="flex gap-2 mt-2">
+      <img src="../assets/thumb1.png" class="border border-gray-300 w-14 h-14 rounded-md">
+      <img src="../assets/thumb2.png" class="border border-gray-300 w-14 h-14 rounded-md">
+      <img src="../assets/thumb3.png" class="border border-gray-300 w-14 h-14 rounded-md">
+      <img src="../assets/thumb4.png" class="border border-gray-300 w-14 h-14 rounded-md">
+      <img src="../assets/thumb5.png" class="border border-gray-300 w-14 h-14 rounded-md">
+    </div>
+  </div>
+
+  <!-- Middle: Product Information -->
+  <div class="md:col-span-1 space-y-3">
+    <p class="text-green-600 font-semibold">✔ In stock</p>
+    <h1 class="text-xl font-semibold text-gray-800">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+    <p class="text-yellow-500 flex items-center space-x-2">
+      <span>⭐⭐⭐⭐⭐</span>
+      <span class="text-gray-600 text-sm">9.3 | 32 reviews | 154 sold</span>
+    </p>
+
+    <!-- Pricing -->
+    <div class="bg-orange-100 p-3 rounded-md flex items-center gap-3">
+      <div>
+        <span class="text-red-500 text-xl font-bold">$98.00</span>
+        <p class="text-gray-500 text-xs">50-100 pcs</p>
+      </div>
+      <span class="text-gray-300 text-2xl">|</span>
+      <div>
+        <span class="text-gray-700 text-xl font-bold">$90.00</span>
+        <p class="text-gray-500 text-xs">100-700 pcs</p>
+      </div>
+      <span class="text-gray-300 text-2xl">|</span>
+      <div>
+        <span class="text-gray-700 text-xl font-bold">$78.00</span>
+        <p class="text-gray-500 text-xs">700+ pcs</p>
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="text-gray-700 text-sm space-y-1">
+      <p><strong>Price:</strong> Negotiable</p>
+      <p><strong>Type:</strong> Classic shoes</p>
+      <p><strong>Material:</strong> Plastic material</p>
+      <p><strong>Design:</strong> Modern nice</p>
+      <p><strong>Customization:</strong> Customized logo and design custom packages</p>
+      <p><strong>Protection:</strong> Refund Policy</p>
+      <p><strong>Warranty:</strong> 2 years full warranty</p>
+    </div>
+  </div>
+
+  <!-- Right: Seller Info -->
+  <div class="md:col-span-1 p-4 border rounded-lg shadow-md  border-gray-300">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 bg-blue-200 rounded-sm flex items-center justify-center text-blue-400 font-semibold">R</div>
+      <div>
+        <h3 class="font-semibold text-sm">Supplier</h3>
+        <p class="text-gray-700 text-sm">Guanji Trading LLC</p>
+      </div>
+      <hr class="text-gray-300">
+
+    </div>
+    <p class="text-gray-400 text-sm mt-2 flex items-center">
+      <img src="../assets/ae-flag.png" alt=""> &nbsp; &nbsp;Germany, Berlin
+    </p>
+    <p class="text-gray-400 text-sm">✔ &nbsp; &nbsp; Verified Seller</p>
+    <p class="text-gray-400 text-sm">🌍 &nbsp; &nbsp; Worldwide shipping</p>
+
+    <button class="bg-blue-600 text-white w-full py-2 rounded-md mt-3 font-medium">
+      Send inquiry
+    </button>
+    <button class="w-full text-blue-600 py-2 font-medium border rounded-md mt-3 border-gray-300">
+      Seller’s profile
+    </button>
+
+    <div class="flex items-center justify-between mt-2 text-blue-500 text-sm">
+      <p class=""><span class="text-blue-500  mt-1 text-3xl">♡ </span> Save for later</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Tabs Section -->
+  <div class="mt-8 border-t pt-4">
+    <div class="flex gap-4 text-gray-600 border-b pb-2">
+      <span class="font-semibold text-blue-600 border-b-2 border-blue-600 pb-2">Description</span>
+      <span>Reviews</span>
+      <span>Shipping</span>
+      <span>About Seller</span>
+    </div>
+    
+    <p class="text-gray-700 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+    <!-- Product Specifications Table -->
+    <table class="w-full mt-4 border">
+      <tr class="border-b"><td class="p-2">Model</td><td class="p-2">#8785687</td></tr>
+      <tr class="border-b"><td class="p-2">Style</td><td class="p-2">Classic</td></tr>
+      <tr class="border-b"><td class="p-2">Certificate</td><td class="p-2">SO-869521212</td></tr>
+      <tr class="border-b"><td class="p-2">Size</td><td class="p-2">34mm x 450mm x 19mm</td></tr>
+      <tr><td class="p-2">Memory</td><td class="p-2">8GB RAM</td></tr>
+    </table>
+  </div>
+
+  <!-- Related Products Section -->
+  <div class="mt-8">
+    <h2 class="text-xl font-semibold">Related Products</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-3">
+      <div class="border rounded-lg p-3 shadow-md">
+        <img src="product1.png" alt="Product" class="w-full h-32 object-cover rounded-md">
+        <p class="text-gray-700 mt-2">Xiaomi Redmi 8</p>
+        <p class="text-red-500 font-bold">$32.00 - $40.00</p>
+      </div>
+      <div class="border rounded-lg p-3 shadow-md">
+        <img src="product2.png" alt="Product" class="w-full h-32 object-cover rounded-md">
+        <p class="text-gray-700 mt-2">Apple Watch Series</p>
+        <p class="text-red-500 font-bold">$70.00 - $90.50</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Discount Banner -->
+  <div class="mt-6 bg-blue-600 text-white p-4 rounded-lg flex justify-between items-center">
+    <p class="font-semibold">Super discount on more than 100 USD</p>
+    <button class="bg-white text-blue-600 px-4 py-2 rounded-lg">Shop Now</button>
+  </div>
+  
+</div>
+
+
+  <!-- Footer -->
+<footer class="bg-gray-100 ">
+
+  <!-- Main Footer Section -->
+  <div class=" px-35 py-12 bg-white w-full">
+<div class="container px-6 py-10 grid grid-cols-12 gap-10 bg-white">
+  <div class="col-span-12 md:col-span-3 space-y-3">
+    <div class="flex items-center space-x-2">
+      <div class="relative w-12 h-12">
+        <img src="../assets/bagBg2.svg" alt="Bag Background 2" class="absolute left-2 w-full h-full z-10">
+        <img src="../assets/bagBg.svg" alt="Bag Background" class="absolute inset-0 w-full h-full z-20">
+        <img src="../assets/shoppingBag.svg" alt="Shopping Bag Logo" class="absolute inset-0 w-8 h-8 z-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+      </div>
+      <img src="../assets/brand.svg" alt="Brand Logo" class="h-6 pl-[4px]">
+    </div>
+    <p class="text-gray-600">Best information about the company goes here but now lorem ipsum is</p>
+    <div class="flex space-x-3">
+      <img src="../assets/fb.svg" alt="Facebook">
+      <img src="../assets/twitter.svg" alt="Twitter">
+      <img src="../assets/link.svg" alt="LinkedIn">
+      <img src="../assets/insta.svg" alt="Instagram">
+      <img src="../assets/youtube.svg" alt="YouTube">
+    </div>
+  </div>
+  <div class="col-span-12 md:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+    
+    <div>
+      <h3 class="font-semibold">About</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>About Us</li>
+        <li>Find Store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Partnership</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>About Us</li>
+        <li>Find Store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Information</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">For Users</h3>
+      <ul class="text-gray-600 space-y-1">
+        <li>Login</li>
+        <li>Register</li>
+        <li>Settings</li>
+        <li>My Orders</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col items-center lg:items-start">
+      <h3 class="font-semibold">Get App</h3>
+      <div class="mt-2">
+        <img src="../assets/appstore.svg" alt="App Store" class="mb-2">
+        <img src="../assets/googleplay.svg" alt="Google Play">
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div> 
+  </div>
+
+ <!-- Bottom Footer -->
+<div class="text-center py-4 border-t border-gray-300 flex flex-col md:flex-row items-center justify-between px-6">
+  <p class="text-gray-600 text-sm">© 2025 Ecommerce.</p>
+  <div class="flex items-center space-x-2">
+    <img src="../assets/us-flag.png" alt="US Flag" class="w-5">
+    <select class="border rounded-md px-2 py-1 text-sm">
+      <option>English</option>
+    </select>
+  </div>
+</div>
+</footer>
+</body>
+</html>
