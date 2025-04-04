@@ -20,3 +20,11 @@ const showComingSoonAlert = (e) => {
 document.getElementById("giftBoxesBtn").addEventListener("click", showComingSoonAlert);
 document.getElementById("menuItemBtn").addEventListener("click", showComingSoonAlert);
 
+function toggleMenu(header) {
+  const list = header.nextElementSibling;
+  list.classList.toggle("hidden");
+  
+  // OPTIONAL: Change ^ to v when collapsed
+  const arrow = header.querySelector("span");
+  arrow.textContent = list.classList.contains("hidden") ? "v" : "^";
+}

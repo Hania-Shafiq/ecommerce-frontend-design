@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="../assets/brand.svg">
   <title>Product</title>
 </head>
-<body>
+<body class="bg-[#F7FAFC]">
   <header>
     <header class="bg-[#fff]">
       <!-- navbar -->
@@ -112,18 +112,18 @@
   </header>
   <!-- main -->
   <!-- Product Page Container -->
-<div class="max-w-6xl mx-auto p-6 bg-white">
+<div class="max-w-6xl mx-auto p-6 mt-3">
   
   <!-- Breadcrumbs -->
   <nav class="text-gray-500 text-sm mb-4">
-    Home > Clothings > Men's wear > <span class="text-gray-800">Summer clothing</span>
+    Home > Clothings > Men's wear > <span class="text-gray-500">Summer clothing</span>
   </nav>
 
   <!-- Product Details Section -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 border rounded-lg shadow-sm bg-white">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 border border-gray-300 rounded-lg shadow-sm bg-white">
 
   <!-- Left: Product Image & Thumbnails -->
-  <div class="md:col-span-1">
+  <div class="md:col-span-1 bg-white">
     <img src="../assets/cart.png" alt="T-Shirt" class="w-full rounded-lg shadow-md border border-gray-300">
     <div class="flex gap-2 mt-2">
       <img src="../assets/thumb1.png" class="border border-gray-300 w-14 h-14 rounded-md">
@@ -204,43 +204,129 @@
 
 </div>
 
-  <!-- Tabs Section -->
-  <div class="mt-8 border-t pt-4">
-    <div class="flex gap-4 text-gray-600 border-b pb-2">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-5">
+  <!-- Left: Product Description -->
+  <div class="md:col-span-3 border rounded-lg p-4 shadow-md border-gray-300 bg-white">
+    <div class="border-b pb-2 flex gap-4 text-gray-600">
       <span class="font-semibold text-blue-600 border-b-2 border-blue-600 pb-2">Description</span>
       <span>Reviews</span>
       <span>Shipping</span>
       <span>About Seller</span>
     </div>
-    
-    <p class="text-gray-700 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-
-    <!-- Product Specifications Table -->
-    <table class="w-full mt-4 border">
-      <tr class="border-b"><td class="p-2">Model</td><td class="p-2">#8785687</td></tr>
-      <tr class="border-b"><td class="p-2">Style</td><td class="p-2">Classic</td></tr>
-      <tr class="border-b"><td class="p-2">Certificate</td><td class="p-2">SO-869521212</td></tr>
-      <tr class="border-b"><td class="p-2">Size</td><td class="p-2">34mm x 450mm x 19mm</td></tr>
-      <tr><td class="p-2">Memory</td><td class="p-2">8GB RAM</td></tr>
-    </table>
+    <p class="text-gray-700 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      <table class="w-full mt-4 border border-gray-300">
+        <tr class="border-b border-gray-300">
+          <td class="p-2 bg-[#E0E7E9]">Model</td>
+          <td class="p-2">#8785687</td>
+        </tr>
+        <tr class="border-b border-gray-300">
+          <td class="p-2 bg-[#E0E7E9]">Style</td>
+          <td class="p-2">Classic</td>
+        </tr>
+        <tr class="border-b border-gray-300">
+          <td class="p-2 bg-[#E0E7E9]">Certificate</td>
+          <td class="p-2">SO-869521212</td>
+        </tr>
+        <tr class="border-b border-gray-300">
+          <td class="p-2 bg-[#E0E7E9]">Size</td>
+          <td class="p-2">34mm x 450mm x 19mm</td>
+        </tr>
+        <tr class="border-b border-gray-300">
+          <td class="p-2 bg-[#E0E7E9]">Memory</td>
+          <td class="p-2">8GB RAM</td>
+        </tr>
+      </table>
+      
   </div>
 
-  <!-- Related Products Section -->
-  <div class="mt-8">
-    <h2 class="text-xl font-semibold">Related Products</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-3">
-      <div class="border rounded-lg p-3 shadow-md">
-        <img src="product1.png" alt="Product" class="w-full h-32 object-cover rounded-md">
-        <p class="text-gray-700 mt-2">Xiaomi Redmi 8</p>
-        <p class="text-red-500 font-bold">$32.00 - $40.00</p>
+  <!-- Right: Sidebar "You May Like" -->
+  <div class="bg-white border border-gray-300 rounded-lg p-4 shadow-md">
+    <h3 class="font-semibold">You may like</h3>
+    <div class="space-y-3 mt-3">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <img src="../assets/l2.png" class="w-12 h-12 object-cover rounded">
+          <div>
+            <p class="text-sm">Men Blazers Sets Elegant Formal</p>
+            <p class="text-gray-500 text-sm">$7.00 - $99.50</p>
+          </div>
+        </div>
+      
+        <div class="flex items-center gap-2">
+          <img src="../assets/l1.png" class="w-12 h-12 object-cover rounded">
+          <div>
+            <p class="text-sm">Men Shirt Sleeve Polo Contrast</p>
+            <p class="text-gray-500 text-sm">$7.00 - $99.50</p>
+          </div>
+        </div>
+      
+        <div class="flex items-center gap-2">
+          <img src="../assets/l3.png" class="w-12 h-12 object-cover rounded">
+          <div>
+            <p class="text-sm">Apple Watch Series Space Gray</p>
+            <p class="text-gray-500 text-sm">$7.00 - $99.50</p>
+          </div>
+        </div>
+      
+        <div class="flex items-center gap-2">
+          <img src="../assets/l4.png" class="w-12 h-12 object-cover rounded">
+          <div>
+            <p class="text-sm">Basketball Crew Socks Long Stuff</p>
+            <p class="text-gray-500 text-sm">$7.00 - $99.50</p>
+          </div>
+        </div>
+      
+        <div class="flex items-center gap-2">
+          <img src="../assets/l5.png" class="w-12 h-12 object-cover rounded">
+          <div>
+            <p class="text-sm">New Summer Men's Castrol T-Shirts</p>
+            <p class="text-gray-500 text-sm">$7.00 - $99.50</p>
+          </div>
+        </div>
       </div>
-      <div class="border rounded-lg p-3 shadow-md">
-        <img src="product2.png" alt="Product" class="w-full h-32 object-cover rounded-md">
-        <p class="text-gray-700 mt-2">Apple Watch Series</p>
-        <p class="text-red-500 font-bold">$70.00 - $90.50</p>
-      </div>
+      
     </div>
   </div>
+</div>
+
+<!-- Related Products -->
+<div class="border border-gray-200 rounded-lg p-4 bg-white mt-3">
+  <h2 class="text-lg font-semibold mb-4">Related products</h2>
+  <div class="grid grid-cols-6 gap-3">
+    <div class="text-center">
+      <img src="../assets/c1.png" alt="Product 1" class="w-full h-36 rounded-lg border border-gray-300">
+      <p class="text-gray-700 mt-2">Xiaomi Redmi 8 Original</p>
+      <p class="text-green-600">$32.00~$40.00</p>
+    </div>
+    <div class="text-center">
+      <img src="../assets/c2.png" alt="Product 2" class="w-full h-36 rounded-lg border border-gray-300 p-2">
+      <p class="text-gray-700 mt-2">Xiaomi Redmi 8 Original</p>
+      <p class="text-green-600">$32.00~$40.00</p>
+    </div>
+    <div class="text-center">
+      <img src="../assets/c3.png" alt="Product 3" class="w-full h-36 rounded-lg border border-gray-300 p-2">
+      <p class="text-gray-700 mt-2">Xiaomi Redmi 8 Original</p>
+      <p class="text-green-600">$32.00~$40.00</p>
+    </div>
+    <div class="text-center">
+      <img src="../assets/c4.png" alt="Product 4" class="w-full h-36 p-4 rounded-lg border border-gray-300">
+      <p class="text-gray-700 mt-2">Xiaomi Redmi 8 Original</p>
+      <p class="text-green-600">$32.00~$40.00</p>
+    </div>
+    <div class="text-center">
+      <img src="../assets/c5.png" alt="Product 5" class="w-full  h-36 rounded-lg border border-gray-300">
+      <p class="text-gray-700 mt-2">Xiaomi Redmi 8 Original</p>
+      <p class="text-green-600">$32.00~$40.00</p>
+    </div>
+    <div class="text-center">
+      <img src="../assets/c3.png" alt="Product 5" class="w-full h-36 rounded-lg border border-gray-300">
+      <p class="text-gray-700 mt-2">Xiaomi Redmi 8 Original</p>
+      <p class="text-green-600">$32.00~$40.00</p>
+    </div>
+  </div>
+</div>
+
 
   <!-- Discount Banner -->
   <div class="mt-6 bg-blue-600 text-white p-4 rounded-lg flex justify-between items-center">
@@ -341,5 +427,6 @@
   </div>
 </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
