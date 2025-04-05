@@ -28,3 +28,9 @@ function toggleMenu(header) {
   const arrow = header.querySelector("span");
   arrow.textContent = list.classList.contains("hidden") ? "v" : "^";
 }
+
+// index5 html js
+let toRemove=document.querySelector(".to-remove")
+document.querySelector("[data-action='remove-all']").addEventListener("click", function () {
+  toRemove.remove();
+});
